@@ -127,6 +127,19 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-36.858" atv="22.501" linkedscene="scene_2" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-25.895" atv="12.533" linkedscene="scene_1" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-0.098" atv="-4.345" linkedscene="scene_9" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="25.566" atv="-16.721" linkedscene="scene_5" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="34.571" atv="-35.609" linkedscene="scene_6" />
+		<hotspot name="spot6" style="skin_hotspotstyle" ath="-104.632" atv="13.659" linkedscene="scene_8" />
+		<hotspot name="spot7" style="skin_hotspotstyle" ath="-111.957" atv="2.798" linkedscene="scene_11" />
+		<hotspot name="spot8" style="skin_hotspotstyle" ath="-100.629" atv="4.500" linkedscene="scene_10" />
+		<hotspot name="spot9" style="skin_hotspotstyle" ath="-80.616" atv="7.760" linkedscene="scene_4" />
+		<hotspot name="spot10" style="skin_hotspotstyle" ath="-88.602" atv="-1.241" linkedscene="scene_7" />
+		<hotspot name="spot11" style="skin_hotspotstyle" ath="-73.524" atv="2.988" linkedscene="scene_12" />
+		<hotspot name="spot12" style="skin_hotspotstyle" ath="-54.580" atv="3.503" linkedscene="scene_14" />
+		<hotspot name="spot13" style="skin_hotspotstyle" ath="-42.179" atv="6.575" linkedscene="scene_13" />
 
 	</scene>
 
@@ -150,6 +163,19 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-43.335" atv="-1.861" linkedscene="scene_14" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-17.992" atv="5.060" linkedscene="scene_13" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-83.995" atv="-17.097" linkedscene="scene_12" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-141.241" atv="-32.153" linkedscene="scene_7" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="176.960" atv="-11.342" linkedscene="scene_10" />
+		<hotspot name="spot6" style="skin_hotspotstyle" ath="151.702" atv="-2.662" linkedscene="scene_11" />
+		<hotspot name="spot7" style="skin_hotspotstyle" ath="108.496" atv="4.040" linkedscene="scene_8" />
+		<hotspot name="spot8" style="skin_hotspotstyle" ath="91.427" atv="2.164" linkedscene="scene_3" />
+		<hotspot name="spot9" style="skin_hotspotstyle" ath="80.374" atv="-4.199" linkedscene="scene_6" />
+		<hotspot name="spot10" style="skin_hotspotstyle" ath="74.585" atv="0.204" linkedscene="scene_5" />
+		<hotspot name="spot11" style="skin_hotspotstyle" ath="67.376" atv="4.103" linkedscene="scene_2" />
+		<hotspot name="spot12" style="skin_hotspotstyle" ath="58.696" atv="5.285" linkedscene="scene_1" />
+		<hotspot name="spot13" style="skin_hotspotstyle" ath="53.354" atv="-2.416" linkedscene="scene_9" />
 
 	</scene>
 
