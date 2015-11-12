@@ -368,6 +368,7 @@
 		<action name="updateradar">
 			set(layer[activespot].parent, spot13);
 			set(layer[radar].parent, spot13);
+			set(layer[radar].heading, 170);
 			
 		</action>
 
@@ -391,6 +392,7 @@
 		<action name="updateradar">
 			set(layer[activespot].parent, spot14);
 			set(layer[radar].parent, spot14);
+			set(layer[radar].heading, 130);
 		</action>
 
 		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-84.545" vlookatmax="84.545" />
