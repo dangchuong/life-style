@@ -1,0 +1,410 @@
+<krpano version="1.18" title="" onstart="startup();">
+
+	<include url="skin/vtourskin.xml" />
+
+	<!-- set skin settings: bingmaps? gyro? thumbnails? tooltips? -->
+	<skin_settings maps="false"
+	               maps_type="bing"
+	               maps_bing_api_key=""
+	               maps_zoombuttons="false"
+	               gyro="true"
+	               title="true"
+	               thumbs="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="false"
+	               thumbs_text="false"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="false"
+	               tooltips_thumbs="false"
+	               tooltips_hotspots="false"
+	               tooltips_mapspots="false"
+	               loadscene_flags="MERGE"
+	               loadscene_blend="BLEND(0.5)"
+	               controlbar_offset="20"
+	               />
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="" scale="0.25" opened_onclick="openurl('...',_blank);" />
+
+
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		loadscene(get(startscene), null, MERGE);
+	</action>
+
+	
+	<scene name="scene_1" title="エキサイティングシート" onstart="updateradar();" thumburl="panos/1.tiles/thumb.jpg" lat="" lng="" heading="">
+		<action name="updateradar">
+			set(layer[activespot].parent, spot1);
+			set(layer[radar].parent, spot1);
+			set(layer[radar].heading, -70);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-82.725" vlookatmax="82.725" />
+
+		<preview url="panos/1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/1.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/1.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_2" title="カテゴリー１" onstart="updateradar();" thumburl="panos/2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot2);
+			set(layer[radar].parent, spot2);
+			set(layer[radar].heading, -60);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-83.635" vlookatmax="83.635" />
+
+		<preview url="panos/2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/2.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/2.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_3" title="カテゴリー２" onstart="updateradar();" thumburl="panos/3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot3);
+			set(layer[radar].parent, spot3);
+			set(layer[radar].heading, -70);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-83.635" vlookatmax="83.635" />
+
+		<preview url="panos/3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/3.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/3.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_4" title="カテゴリー３（メイン）" onstart="updateradar();" thumburl="panos/4.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot4);
+			set(layer[radar].parent, spot4);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-82.725" vlookatmax="82.725" />
+
+		<preview url="panos/4.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/4.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/4.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_5" title="カテゴリー４フロントビュー" onstart="updateradar();" thumburl="panos/5.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot5);
+			set(layer[radar].parent, spot5);
+			set(layer[radar].heading, -110);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-82.725" vlookatmax="82.725" />
+
+		<preview url="panos/5.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/5.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/5.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_6" title="カテゴリー４" onstart="updateradar();" thumburl="panos/6.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot6);
+			set(layer[radar].parent, spot6);
+			set(layer[radar].heading, -180);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-83.635" vlookatmax="83.635" />
+
+		<preview url="panos/6.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/6.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/6.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_7" title="カテゴリー５" onstart="updateradar();" thumburl="panos/7.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot7);
+			set(layer[radar].parent, spot7);
+			set(layer[radar].heading, 20);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-84.545" vlookatmax="84.545" />
+
+		<preview url="panos/7.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/7.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/7.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_8" title="ホーム自由席（下層）" onstart="updateradar();" thumburl="panos/8.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot8);
+			set(layer[radar].parent, spot8);
+			set(layer[radar].heading, -70);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-83.635" vlookatmax="83.635" />
+
+		<preview url="panos/8.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/8.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/8.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_9" title="カテゴリー４テーブルシート" onstart="updateradar();" thumburl="panos/9.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot9);
+			set(layer[radar].parent, spot9);
+			set(layer[radar].heading, -180);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-82.725" vlookatmax="82.725" />
+
+		<preview url="panos/9.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/9.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/9.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_10" title="Vシート60" onstart="updateradar();" thumburl="panos/10.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot10);
+			set(layer[radar].parent, spot10);
+			set(layer[radar].heading, 0);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-84.545" vlookatmax="84.545" />
+
+		<preview url="panos/10.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/10.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/10.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_11" title="Vシート47" onstart="updateradar();" thumburl="panos/11.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot11);
+			set(layer[radar].parent, spot11);
+			set(layer[radar].heading, 10);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-84.545" vlookatmax="84.545" />
+
+		<preview url="panos/11.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/11.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/11.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_12" title="カテゴリー５フロントビュー" onstart="updateradar();" thumburl="panos/12.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot12);
+			set(layer[radar].parent, spot12);
+			set(layer[radar].heading, 10);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-84.545" vlookatmax="84.545" />
+
+		<preview url="panos/12.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/12.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/12.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_13" title="車椅子席" onstart="updateradar();" thumburl="panos/13.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot13);
+			set(layer[radar].parent, spot13);
+			
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-84.545" vlookatmax="84.545" />
+
+		<preview url="panos/13.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/13.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/13.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_14" title="ファミリーシート" onstart="updateradar();" thumburl="panos/14.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<action name="updateradar">
+			set(layer[activespot].parent, spot14);
+			set(layer[radar].parent, spot14);
+		</action>
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-84.545" vlookatmax="84.545" />
+
+		<preview url="panos/14.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/14.tiles/pano_%s.jpg" />
+			<mobile>
+				<cube url="panos/14.tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<!-- the image map -->
+    <layer name="map" url="skin/吹田スタジアムマップ.jpg" keep="true" align="topright" x="16" y="16" width="500" height="308"
+            handcursor="false"
+            scalechildren="true"
+            maskchildren="true"
+            onclick="closemap();"
+    >
+        <layer name="spot1" scale="2" url="skin/point.png" align="lefttop" edge="center" x="760" y="720"  zorder="2" onclick="loadscene(scene_1, null, MERGE, BLEND(1));" />
+        <layer name="spot2" scale="2" url="skin/point.png" align="lefttop" edge="center" x="690" y="710"  zorder="2" onclick="loadscene(scene_2, null, MERGE, BLEND(1));" />
+        <layer name="spot3" scale="2" url="skin/point.png" align="lefttop" edge="center" x="720" y="290"  zorder="2" onclick="loadscene(scene_3, null, MERGE, BLEND(1));" />
+        <layer name="spot4" scale="2" url="skin/point.png" align="lefttop" edge="center" x="510" y="690"  zorder="2" onclick="loadscene(scene_4, null, MERGE, BLEND(1));" />
+        <layer name="spot5" scale="2" url="skin/point.png" align="lefttop" edge="center" x="600" y="800"  zorder="2" onclick="loadscene(scene_5, null, MERGE, BLEND(1));" />
+        <layer name="spot6" scale="2" url="skin/point.png" align="lefttop" edge="center" x="550" y="850"  zorder="2" onclick="loadscene(scene_6, null, MERGE, BLEND(1));" />
+        <layer name="spot7" scale="2" url="skin/point.png" align="lefttop" edge="center" x="710" y="140"  zorder="2" onclick="loadscene(scene_7, null, MERGE, BLEND(1));" />
+        <layer name="spot8" scale="2" url="skin/point.png" align="lefttop" edge="center" x="500" y="500"  zorder="2" onclick="loadscene(scene_8, null, MERGE, BLEND(1));" />
+        <layer name="spot9" scale="2" url="skin/point.png" align="lefttop" edge="center" x="800" y="799"  zorder="2" onclick="loadscene(scene_9, null, MERGE, BLEND(1));" />
+        <layer name="spot10" scale="2" url="skin/point.png" align="lefttop" edge="center" x="650" y="240"  zorder="2" onclick="loadscene(scene_10, null, MERGE, BLEND(1));" />
+        <layer name="spot11" scale="2" url="skin/point.png" align="lefttop" edge="center" x="490" y="230"  zorder="2" onclick="loadscene(scene_11, null, MERGE, BLEND(1));" />
+        <layer name="spot12" scale="2" url="skin/point.png" align="lefttop" edge="center" x="810" y="180"  zorder="2" onclick="loadscene(scene_12, null, MERGE, BLEND(1));" />
+        <layer name="spot13" scale="2" url="skin/point.png" align="lefttop" edge="center" x="1110" y="275"  zorder="2" onclick="loadscene(scene_13, null, MERGE, BLEND(1));" />
+        <layer name="spot14" scale="2" url="skin/point.png" align="lefttop" edge="center" x="1090" y="400"  zorder="2" onclick="loadscene(scene_14, null, MERGE, BLEND(1));" />
+    </layer>
+
+    <!-- actions -->
+    <action name="closemap">
+        set(onclick, openmap() );
+        tween(width,100);
+        tween(height,81);
+    </action>
+
+    <action name="openmap">
+        set(onclick, closemap() );
+        tween(width,500);
+        tween(height,308);
+    </action>
+
+    <action name="resizemap">
+        tween(width,1000);
+        tween(height,700);
+    </action>
+
+     <!-- radar plugin, will be assigned to be a child of spot -->
+    <layer name="radar" parent="map" keep="true" visible="true"
+           url="plugins/radar.swf"
+           alturl="plugins/radar.js"
+           align="center" zorder="1"
+	       scale.mobile="1.5"
+	       fillalpha="0.5" fillcolor="0x7F5F3F"
+	       linewidth="1.0" linecolor="0xE0E0A0" linealpha="0.5"
+           />
+    <!-- activated spot image (child of the radar layer) -->
+    <layer name="activespot" parent="radar" scale="2" url="skin/pointactive.png" keep="true" align="center" edge="center" />
+</krpano>
