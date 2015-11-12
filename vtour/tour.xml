@@ -55,6 +55,19 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-114.364" atv="13.274" linkedscene="scene_2" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-120.893" atv="2.276" linkedscene="scene_3" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-152.027" atv="-14.714" linkedscene="scene_6" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="-143.928" atv="-2.090" linkedscene="scene_5" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="-35.256" atv="-7.046" linkedscene="scene_7" />
+		<hotspot name="spot6" style="skin_hotspotstyle" ath="-86.321" atv="5.216" linkedscene="scene_8" />
+		<hotspot name="spot7" style="skin_hotspotstyle" ath="123.832" atv="-22.746" linkedscene="scene_9" />
+		<hotspot name="spot8" style="skin_hotspotstyle" ath="-45.064" atv="3.317" linkedscene="scene_10" />
+		<hotspot name="spot9" style="skin_hotspotstyle" ath="-61.573" atv="0.949" linkedscene="scene_11" />
+		<hotspot name="spot10" style="skin_hotspotstyle" ath="-23.033" atv="0.028" linkedscene="scene_12" />
+		<hotspot name="spot11" style="skin_hotspotstyle" ath="-29.913" atv="5.731" linkedscene="scene_4" />
+		<hotspot name="spot12" style="skin_hotspotstyle" ath="13.290" atv="3.957" linkedscene="scene_14" />
+		<hotspot name="spot13" style="skin_hotspotstyle" ath="27.457" atv="4.941" linkedscene="scene_13" />
 
 	</scene>
 
@@ -78,6 +91,19 @@
 		</image>
 
 		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="1.009" atv="19.892" linkedscene="scene_1" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-158.230" atv="6.589" linkedscene="scene_3" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-62.412" atv="6.176" linkedscene="scene_4" />
+		<hotspot name="spot4" style="skin_hotspotstyle" ath="177.250" atv="-9.708" linkedscene="scene_5" />
+		<hotspot name="spot5" style="skin_hotspotstyle" ath="176.433" atv="-17.619" linkedscene="scene_6" />
+		<hotspot name="spot6" style="skin_hotspotstyle" ath="-72.378" atv="-3.629" linkedscene="scene_7" />
+		<hotspot name="spot7" style="skin_hotspotstyle" ath="-108.719" atv="7.321" linkedscene="scene_8" />
+		<hotspot name="spot8" style="skin_hotspotstyle" ath="38.901" atv="-12.299" linkedscene="scene_9" />
+		<hotspot name="spot9" style="skin_hotspotstyle" ath="-80.159" atv="2.165" linkedscene="scene_10" />
+		<hotspot name="spot10" style="skin_hotspotstyle" ath="-98.379" atv="1.894" linkedscene="scene_11" />
+		<hotspot name="spot11" style="skin_hotspotstyle" ath="-55.397" atv="1.476" linkedscene="scene_12" />
+		<hotspot name="spot12" style="skin_hotspotstyle" ath="-16.513" atv="6.732" linkedscene="scene_13" />
+		<hotspot name="spot13" style="skin_hotspotstyle" ath="-28.645" atv="4.229" linkedscene="scene_14" />
 
 	</scene>
 
@@ -86,7 +112,7 @@
 		<action name="updateradar">
 			set(layer[activespot].parent, spot3);
 			set(layer[radar].parent, spot3);
-			set(layer[radar].heading, -70);
+			set(layer[radar].heading, -20);
 		</action>
 
 		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-83.635" vlookatmax="83.635" />
@@ -109,6 +135,7 @@
 		<action name="updateradar">
 			set(layer[activespot].parent, spot4);
 			set(layer[radar].parent, spot4);
+			set(layer[radar].heading, 10);
 		</action>
 
 		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-82.725" vlookatmax="82.725" />
@@ -246,7 +273,7 @@
 		<action name="updateradar">
 			set(layer[activespot].parent, spot10);
 			set(layer[radar].parent, spot10);
-			set(layer[radar].heading, 0);
+			
 		</action>
 
 		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="range" vlookatmin="-84.545" vlookatmax="84.545" />
@@ -364,8 +391,8 @@
     >
         <layer name="spot1" scale="2" url="skin/point.png" align="lefttop" edge="center" x="760" y="720"  zorder="2" onclick="loadscene(scene_1, null, MERGE, BLEND(1));" />
         <layer name="spot2" scale="2" url="skin/point.png" align="lefttop" edge="center" x="690" y="710"  zorder="2" onclick="loadscene(scene_2, null, MERGE, BLEND(1));" />
-        <layer name="spot3" scale="2" url="skin/point.png" align="lefttop" edge="center" x="720" y="290"  zorder="2" onclick="loadscene(scene_3, null, MERGE, BLEND(1));" />
-        <layer name="spot4" scale="2" url="skin/point.png" align="lefttop" edge="center" x="510" y="690"  zorder="2" onclick="loadscene(scene_4, null, MERGE, BLEND(1));" />
+        <layer name="spot3" scale="2" url="skin/point.png" align="lefttop" edge="center" x="510" y="690"  zorder="2" onclick="loadscene(scene_4, null, MERGE, BLEND(1));" />
+        <layer name="spot4" scale="2" url="skin/point.png" align="lefttop" edge="center" x="720" y="290"  zorder="2" onclick="loadscene(scene_3, null, MERGE, BLEND(1));" />
         <layer name="spot5" scale="2" url="skin/point.png" align="lefttop" edge="center" x="600" y="800"  zorder="2" onclick="loadscene(scene_5, null, MERGE, BLEND(1));" />
         <layer name="spot6" scale="2" url="skin/point.png" align="lefttop" edge="center" x="550" y="850"  zorder="2" onclick="loadscene(scene_6, null, MERGE, BLEND(1));" />
         <layer name="spot7" scale="2" url="skin/point.png" align="lefttop" edge="center" x="710" y="140"  zorder="2" onclick="loadscene(scene_7, null, MERGE, BLEND(1));" />
@@ -374,8 +401,8 @@
         <layer name="spot10" scale="2" url="skin/point.png" align="lefttop" edge="center" x="650" y="240"  zorder="2" onclick="loadscene(scene_10, null, MERGE, BLEND(1));" />
         <layer name="spot11" scale="2" url="skin/point.png" align="lefttop" edge="center" x="490" y="230"  zorder="2" onclick="loadscene(scene_11, null, MERGE, BLEND(1));" />
         <layer name="spot12" scale="2" url="skin/point.png" align="lefttop" edge="center" x="810" y="180"  zorder="2" onclick="loadscene(scene_12, null, MERGE, BLEND(1));" />
-        <layer name="spot13" scale="2" url="skin/point.png" align="lefttop" edge="center" x="1110" y="275"  zorder="2" onclick="loadscene(scene_13, null, MERGE, BLEND(1));" />
-        <layer name="spot14" scale="2" url="skin/point.png" align="lefttop" edge="center" x="1090" y="400"  zorder="2" onclick="loadscene(scene_14, null, MERGE, BLEND(1));" />
+        <layer name="spot13" scale="2" url="skin/point.png" align="lefttop" edge="center" x="1090" y="400"  zorder="2" onclick="loadscene(scene_13, null, MERGE, BLEND(1));" />
+        <layer name="spot14" scale="2" url="skin/point.png" align="lefttop" edge="center" x="1110" y="275"  zorder="2" onclick="loadscene(scene_14, null, MERGE, BLEND(1));" />
     </layer>
 
     <!-- actions -->
