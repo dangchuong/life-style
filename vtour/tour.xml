@@ -240,7 +240,7 @@
 		<hotspot name="spot2" style="skin_hotspotstyle" ath="126.661" atv="26.581" linkedscene="scene_9" />
 		<hotspot name="spot3" style="skin_hotspotstyle" ath="116.598" atv="31.319" linkedscene="scene_1" />
 		<hotspot name="spot4" style="skin_hotspotstyle" ath="98.308" atv="38.072" linkedscene="scene_2" />
-		<hotspot name="spot5" style="skin_hotspotstyle" ath="13.471" atv="27.116" linkedscene="scene_4" />
+		
 		<hotspot name="spot6" style="skin_hotspotstyle" ath="48.561" atv="21.509" linkedscene="scene_8" />
 		<hotspot name="spot7" style="skin_hotspotstyle" ath="52.951" atv="7.672" linkedscene="scene_11" />
 		<hotspot name="spot8" style="skin_hotspotstyle" ath="102.206" atv="8.960" linkedscene="scene_10" />
@@ -249,6 +249,7 @@
 		<hotspot name="spot11" style="skin_hotspotstyle" ath="89.831" atv="7.608" linkedscene="scene_12" />
 		<hotspot name="spot12" style="skin_hotspotstyle" ath="112.253" atv="9.800" linkedscene="scene_14" />
 		<hotspot name="spot13" style="skin_hotspotstyle" ath="121.691" atv="12.719" linkedscene="scene_13" />
+		<hotspot name="spot14" style="skin_hotspotstyle" ath="14.393" atv="27.411" linkedscene="scene_3" />
 
 	</scene>
 
