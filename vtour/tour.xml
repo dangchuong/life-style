@@ -530,7 +530,7 @@
 	</scene>
 
 	<!-- the image map -->
-    <layer name="map" url="skin/吹田スタジアムマップ.jpg" keep="true" align="topright" x="16" y="16" width="500" height="308"
+    <layer name="map" url="skin/map.jpg" keep="true" align="topright" x="16" y="16" width="500" height="308"
             handcursor="false"
             scalechildren="true"
             maskchildren="true"
