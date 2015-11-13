@@ -14,7 +14,7 @@
 	               thumbs_opened="false"
 	               thumbs_text="false"
 	               thumbs_dragging="true"
-	               thumbs_onhoverscrolling="false"
+	               thumbs_onhoverscrolling="true"
 	               thumbs_scrollbuttons="false"
 	               thumbs_scrollindicator="false"
 	               thumbs_loop="false"
