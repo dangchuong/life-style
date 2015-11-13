@@ -535,20 +535,20 @@
             maskchildren="true"
             onclick="closemap();"
     >
-        <layer name="spot1" scale="2" url="skin/point.png" align="lefttop" edge="center" x="760" y="720"  zorder="2" onclick="loadscene(scene_1, null, MERGE, BLEND(1));" />
-        <layer name="spot2" scale="2" url="skin/point.png" align="lefttop" edge="center" x="690" y="710"  zorder="2" onclick="loadscene(scene_2, null, MERGE, BLEND(1));" />
-        <layer name="spot3" scale="2" url="skin/point.png" align="lefttop" edge="center" x="510" y="690"  zorder="2" onclick="loadscene(scene_3, null, MERGE, BLEND(1));" />
-        <layer name="spot4" scale="2" url="skin/point.png" align="lefttop" edge="center" x="720" y="290"  zorder="2" onclick="loadscene(scene_4, null, MERGE, BLEND(1));" />
-        <layer name="spot5" scale="2" url="skin/point.png" align="lefttop" edge="center" x="600" y="800"  zorder="2" onclick="loadscene(scene_5, null, MERGE, BLEND(1));" />
-        <layer name="spot6" scale="2" url="skin/point.png" align="lefttop" edge="center" x="550" y="850"  zorder="2" onclick="loadscene(scene_6, null, MERGE, BLEND(1));" />
-        <layer name="spot7" scale="2" url="skin/point.png" align="lefttop" edge="center" x="710" y="140"  zorder="2" onclick="loadscene(scene_7, null, MERGE, BLEND(1));" />
-        <layer name="spot8" scale="2" url="skin/point.png" align="lefttop" edge="center" x="500" y="500"  zorder="2" onclick="loadscene(scene_8, null, MERGE, BLEND(1));" />
-        <layer name="spot9" scale="2" url="skin/point.png" align="lefttop" edge="center" x="800" y="799"  zorder="2" onclick="loadscene(scene_9, null, MERGE, BLEND(1));" />
-        <layer name="spot10" scale="2" url="skin/point.png" align="lefttop" edge="center" x="950" y="240"  zorder="2" onclick="loadscene(scene_10, null, MERGE, BLEND(1));" />
-        <layer name="spot11" scale="2" url="skin/point.png" align="lefttop" edge="center" x="490" y="230"  zorder="2" onclick="loadscene(scene_11, null, MERGE, BLEND(1));" />
-        <layer name="spot12" scale="2" url="skin/point.png" align="lefttop" edge="center" x="810" y="180"  zorder="2" onclick="loadscene(scene_12, null, MERGE, BLEND(1));" />
-        <layer name="spot13" scale="2" url="skin/point.png" align="lefttop" edge="center" x="1090" y="400"  zorder="2" onclick="loadscene(scene_13, null, MERGE, BLEND(1));" />
-        <layer name="spot14" scale="2" url="skin/point.png" align="lefttop" edge="center" x="1110" y="275"  zorder="2" onclick="loadscene(scene_14, null, MERGE, BLEND(1));" />
+        <layer name="spot1" scale="3" url="skin/point.png" align="lefttop" edge="center" x="760" y="720"  zorder="2" onclick="loadscene(scene_1, null, MERGE, BLEND(1));" />
+        <layer name="spot2" scale="3" url="skin/point.png" align="lefttop" edge="center" x="690" y="710"  zorder="2" onclick="loadscene(scene_2, null, MERGE, BLEND(1));" />
+        <layer name="spot3" scale="3" url="skin/point.png" align="lefttop" edge="center" x="510" y="690"  zorder="2" onclick="loadscene(scene_3, null, MERGE, BLEND(1));" />
+        <layer name="spot4" scale="3" url="skin/point.png" align="lefttop" edge="center" x="720" y="290"  zorder="2" onclick="loadscene(scene_4, null, MERGE, BLEND(1));" />
+        <layer name="spot5" scale="3" url="skin/point.png" align="lefttop" edge="center" x="600" y="800"  zorder="2" onclick="loadscene(scene_5, null, MERGE, BLEND(1));" />
+        <layer name="spot6" scale="3" url="skin/point.png" align="lefttop" edge="center" x="550" y="850"  zorder="2" onclick="loadscene(scene_6, null, MERGE, BLEND(1));" />
+        <layer name="spot7" scale="3" url="skin/point.png" align="lefttop" edge="center" x="710" y="140"  zorder="2" onclick="loadscene(scene_7, null, MERGE, BLEND(1));" />
+        <layer name="spot8" scale="3" url="skin/point.png" align="lefttop" edge="center" x="500" y="500"  zorder="2" onclick="loadscene(scene_8, null, MERGE, BLEND(1));" />
+        <layer name="spot9" scale="3" url="skin/point.png" align="lefttop" edge="center" x="800" y="799"  zorder="2" onclick="loadscene(scene_9, null, MERGE, BLEND(1));" />
+        <layer name="spot10" scale="3" url="skin/point.png" align="lefttop" edge="center" x="950" y="240"  zorder="2" onclick="loadscene(scene_10, null, MERGE, BLEND(1));" />
+        <layer name="spot11" scale="3" url="skin/point.png" align="lefttop" edge="center" x="490" y="230"  zorder="2" onclick="loadscene(scene_11, null, MERGE, BLEND(1));" />
+        <layer name="spot12" scale="3" url="skin/point.png" align="lefttop" edge="center" x="810" y="180"  zorder="2" onclick="loadscene(scene_12, null, MERGE, BLEND(1));" />
+        <layer name="spot13" scale="3" url="skin/point.png" align="lefttop" edge="center" x="1090" y="400"  zorder="2" onclick="loadscene(scene_13, null, MERGE, BLEND(1));" />
+        <layer name="spot14" scale="3" url="skin/point.png" align="lefttop" edge="center" x="1110" y="275"  zorder="2" onclick="loadscene(scene_14, null, MERGE, BLEND(1));" />
     </layer>
 
     <!-- actions -->
@@ -579,5 +579,5 @@
 	       linewidth="1.0" linecolor="0xE0E0A0" linealpha="0.5"
            />
     <!-- activated spot image (child of the radar layer) -->
-    <layer name="activespot" parent="radar" scale="2" url="skin/pointactive.png" keep="true" align="center" edge="center" />
+    <layer name="activespot" parent="radar" scale="3" url="skin/pointactive.png" keep="true" align="center" edge="center" />
 </krpano>
