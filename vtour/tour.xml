@@ -400,4 +400,21 @@
 	       css="text-align:center; color:#000000; font-family:Arial; font-weight:bold; font-size:14px;"
 	       html=""
 	       />
+
+
+
+
+	   <autorotate enabled="true"
+		waittime="0.5"
+		accel="1.0"
+		speed="4.0"
+		horizon="0.0"
+		tofov="off"
+		/>
+		<action name="stoprotation">
+		set(autorotate.enabled,false);
+		</action>
+		<plugin name="rot_btn" url="" keep="true"
+		onclick="stoprotation()"
+		/>
 </krpano>
