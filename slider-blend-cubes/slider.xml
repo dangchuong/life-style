@@ -83,7 +83,7 @@
 
 
 	<action name="start">
-		showtext('[b][i]krpano[br]xml slider / blending cubes example[/i][/b]', infostyle);
+		
 		
 		addcube(pano1);
 		addcube(pano2);
