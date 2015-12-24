@@ -52,12 +52,12 @@
 
 
 	<action name="addcube">
-		addface(face_%1_F, '%CURRENTXML%/panos/%1_f.jpg',    0,   0);
-		addface(face_%1_L, '%CURRENTXML%/panos/%1_l.jpg',  -90,   0);
-		addface(face_%1_R, '%CURRENTXML%/panos/%1_r.jpg',  +90,   0);
-		addface(face_%1_B, '%CURRENTXML%/panos/%1_b.jpg', +180,   0);
-		addface(face_%1_Z, '%CURRENTXML%/panos/%1_u.jpg',    0, -90);
-		addface(face_%1_N, '%CURRENTXML%/panos/%1_d.jpg',    0, +90);
+		addface(face_%1_F, 'panos/%1_f.jpg',    0,   0);
+		addface(face_%1_L, 'panos/%1_l.jpg',  -90,   0);
+		addface(face_%1_R, 'panos/%1_r.jpg',  +90,   0);
+		addface(face_%1_B, 'panos/%1_b.jpg', +180,   0);
+		addface(face_%1_Z, 'panos/%1_u.jpg',    0, -90);
+		addface(face_%1_N, 'panos/%1_d.jpg',    0, +90);
 	</action>
 
 
