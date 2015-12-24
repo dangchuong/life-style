@@ -84,9 +84,9 @@
 
 	<action name="start">
 		
-		
-		addcube(mobile1);
 		addcube(mobile2);
+		addcube(mobile1);
+		
 
 		setblend(0);
 	</action>
