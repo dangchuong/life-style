@@ -85,8 +85,8 @@
 	<action name="start">
 		
 		
-		addcube(pano1);
-		addcube(pano2);
+		addcube(mobile1);
+		addcube(mobile2);
 
 		setblend(0);
 	</action>
@@ -94,25 +94,25 @@
 
 	<action name="setblend" devices="flash">
 		sub(blend2, 1.0, %1);
-		setcubealpha(pano1, get(blend2));
-		setcubealpha(pano2, %1);
+		setcubealpha(mobile1, get(blend2));
+		setcubealpha(mobile2, %1);
 	</action>
 	
 	<action name="setblend" devices="html5">
 		set(blend1, %1);
 		sub(blend2, 1.0, %1);
-		copy(hotspot[face_pano1_F].alpha, blend1);
-		copy(hotspot[face_pano1_L].alpha, blend1);
-		copy(hotspot[face_pano1_R].alpha, blend1);
-		copy(hotspot[face_pano1_B].alpha, blend1);
-		copy(hotspot[face_pano1_Z].alpha, blend1);
-		copy(hotspot[face_pano1_N].alpha, blend1);
-		copy(hotspot[face_pano2_F].alpha, blend2);
-		copy(hotspot[face_pano2_L].alpha, blend2);
-		copy(hotspot[face_pano2_R].alpha, blend2);
-		copy(hotspot[face_pano2_B].alpha, blend2);
-		copy(hotspot[face_pano2_Z].alpha, blend2);
-		copy(hotspot[face_pano2_N].alpha, blend2);
+		copy(hotspot[face_mobile1_F].alpha, blend1);
+		copy(hotspot[face_mobile1_L].alpha, blend1);
+		copy(hotspot[face_mobile1_R].alpha, blend1);
+		copy(hotspot[face_mobile1_B].alpha, blend1);
+		copy(hotspot[face_mobile1_Z].alpha, blend1);
+		copy(hotspot[face_mobile1_N].alpha, blend1);
+		copy(hotspot[face_mobile2_F].alpha, blend2);
+		copy(hotspot[face_mobile2_L].alpha, blend2);
+		copy(hotspot[face_mobile2_R].alpha, blend2);
+		copy(hotspot[face_mobile2_B].alpha, blend2);
+		copy(hotspot[face_mobile2_Z].alpha, blend2);
+		copy(hotspot[face_mobile2_N].alpha, blend2);
 	</action>
 
 </krpano>
